@@ -26,11 +26,11 @@ from api.views import (EventViewSet,
     CompetitionViewSet,
     MedalViewSet)
 
-# Instaciating Router and registering ViewSets
+# Instanciating Router and registering ViewSets
 router = DefaultRouter()
 router.register(r'events', EventViewSet)
 router.register(r'nocs', NOCViewSet)
-router.register(r'sports', SportViewSet)
+# router.register(r'sports', SportViewSet)
 router.register(r'games', GameViewSet)
 router.register(r'athletes', AthleteViewSet)
 router.register(r'competitions', CompetitionViewSet)

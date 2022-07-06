@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Create your models for DATABASE structure here
 class Athlete(models.Model):
     """
     Represents an olympic Athlete
@@ -27,6 +27,11 @@ class Athlete(models.Model):
         decimal_places=1,
         max_digits=5
         )
+    # birthdate = models.CharField(
+    #     blank=True,
+    #     null=True,
+    #     max_length=11
+    #     )
 
     class Meta:
         verbose_name = "Athlete"
